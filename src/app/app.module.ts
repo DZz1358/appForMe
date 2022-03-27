@@ -20,7 +20,7 @@ import { IntroComponent } from './intro/intro.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

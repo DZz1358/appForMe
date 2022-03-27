@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { BtnComponent } from './components/btn/btn.component';
+import { RegisterFormComponent } from './components/register-form/register-form.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -13,17 +15,20 @@ import { BtnComponent } from './components/btn/btn.component';
         HeaderComponent,
         LogoComponent,
         NavComponent,
-        BtnComponent
+        BtnComponent,
+        RegisterFormComponent
     ],
     imports: [
         HttpClientModule,
-        CommonModule
+        CommonModule,
+        MatFormFieldModule
     ],
     exports: [
         CommonModule,
         HttpClientModule,
         HeaderComponent,
-        BtnComponent
+        BtnComponent,
+        RegisterFormComponent
     ],
 })
 export class SharedModule {
