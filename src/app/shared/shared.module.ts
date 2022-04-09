@@ -10,13 +10,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
     declarations: [
         HeaderComponent,
         LogoComponent,
         NavComponent,
         BtnComponent,
-        RegisterFormComponent
+        RegisterFormComponent,
+        FooterComponent
     ],
     imports: [
         HttpClientModule,
@@ -31,7 +33,8 @@ import { FormsModule } from '@angular/forms';
         HttpClientModule,
         HeaderComponent,
         BtnComponent,
-        RegisterFormComponent
+        RegisterFormComponent,
+        FooterComponent
     ],
 })
 export class SharedModule {
