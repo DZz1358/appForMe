@@ -6,10 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { BtnComponent } from './components/btn/btn.component';
 import { RegisterFormComponent } from './components/register-form/register-form.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-
-
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
 @NgModule({
     declarations: [
         HeaderComponent,
@@ -21,7 +21,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     imports: [
         HttpClientModule,
         CommonModule,
-        MatFormFieldModule
+        FormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatRadioModule
     ],
     exports: [
         CommonModule,

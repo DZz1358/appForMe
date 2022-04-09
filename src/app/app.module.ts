@@ -9,6 +9,7 @@ import { UsersComponent } from './users/users.component';
 import { AcquaintanceComponent } from './acquaintance/acquaintance.component';
 import { IntroComponent } from './intro/intro.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { IntroComponent } from './intro/intro.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
