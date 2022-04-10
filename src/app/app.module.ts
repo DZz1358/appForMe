@@ -8,6 +8,8 @@ import { SharedModule } from './shared/shared.module';
 import { UsersComponent } from './users/users.component';
 import { AcquaintanceComponent } from './acquaintance/acquaintance.component';
 import { IntroComponent } from './intro/intro.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersService } from './services/users.service';
 
 
 @NgModule({
@@ -22,9 +24,9 @@ import { IntroComponent } from './intro/intro.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

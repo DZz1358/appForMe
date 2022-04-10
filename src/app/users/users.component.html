@@ -3,71 +3,12 @@
     <h1>Our cheerful users</h1>
     <h2>The best specialists are shown below</h2>
     <div class="card-wrapper">
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>Leading specialist of the department of control over</p>
-        <p class="user-mail">JeromeKlarkaJeromeKlarka@gmail.com
-        </p>
-        <p>+38 (098) 278 76 24</p>
-      </div>
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>
-          Leading specialist of the department of control over
-        </p>
-        <p class="user-mail">JeromeKlarkaJeromeKlarka@gmail.com</p>
-        <p>+38 (098) 278 76 24</p>
-      </div>
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>Leading specialist of the department of control over</p>
-        <p class="user-mail">JeromeKlarkaJeromeKlarka@gmail.com</p>
-        <p>+38 (098) 278 76 24</p>
-      </div>
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>Leading specialist of the department of control over</p>
-        <p>JeromeKlarkaJeromeKlarka@gmail.com</p>
-        <p>+38 (098) 278 76 24</p>
-      </div>
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>Leading specialist of the department of control over</p>
-        <p>JeromeKlarkaJeromeKlarka@gmail.com</p>
-        <p>+38 (098) 278 76 24</p>
-      </div>
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>Leading specialist of the department of control over</p>
-        <p>JeromeKlarkaJeromeKlarka@gmail.com</p>
-        <p>+38 (098) 278 76 24</p>
-      </div>
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>Leading specialist of the department of control over</p>
-        <p>JeromeKlarkaJeromeKlarka@gmail.com</p>
-        <p>+38 (098) 278 76 24</p>
-      </div>
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>Leading specialist of the department of control over</p>
-        <p>JeromeKlarkaJeromeKlarka@gmail.com</p>
-        <p>+38 (098) 278 76 24</p>
-      </div>
-      <div class="user-card">
-        <img src="./assets/img/Photo-cover.svg" alt="" />
-        <h2 class="user-name">Salvador Stewart Flynn Thomas Salvaster</h2>
-        <p>Leading specialist of the department of control over</p>
-        <p>JeromeKlarkaJeromeKlarka@gmail.com</p>
-        <p>+38 (098) 278 76 24</p>
+      <div class="user-card" *ngFor="let user of users">
+        <img class="user-card_img" src="{{ user.avatar }}" />
+        <h2 class="user-name">{{ user.name }}</h2>
+        <p>{{ user.job }}</p>
+        <p class="user-mail">{{ user.mail }}</p>
+        <p>{{ user.number }}</p>
       </div>
     </div>
     <button class="btn">Show more</button>
